@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/styles.css">
+    <title>Pagina</title>
+</head>
+<body>
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: mediumturquoise;">
+        <a class="navbar-brand" href="#">Daniel Nuñez</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <style>
+          .inicio{
+        
+            display: flex;
+            margin-left: 20px;
+          }
+        </style>
+        <div class="inicio navbar-collapse collapse" id="navbarColor02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portafolio">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <!-- <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /> -->
+            <!-- Masthead Heading-->
+            <h1 class="text-uppercase mb-0 mt-3">Potafolio de Trabajo</h1>
+            <!-- Masthead Subheading-->
+            <p class="font-weight-light mb-3">Progamador - Web Designer - Apps Movil</p>
+        </div>
+    </header>
+    <hr style="height:2px;border-width:0;color:black;background-color:gray; width: 95%; opacity: 0%;">
+
+    <section id="yo">
+        <div class="contendord" style="background-color: #333; border-radius: 18px; padding: 5px; width: 50%; margin: auto;">
+            <div class="card border-info" style="width: 100%;color: black;  border-radius: 18px;">
+                <div class="card-header" style="font-size: 1.5em; text-align: center;">Sobre Mi</div>
+                <div class="card-body">
+                  <h3 class="card-title mt-n2 mb-1" style="text-align: center;">Experiencia</h3>
+                  <p class="card-text" style="font-size: 1.3em;">Soy una persona que tiene muchas ganas de aprender cosas nuevas y poner en practica los conocimientos que poseo, de las cosas que mas quiero es ganar experiencia.
+                    Actualmente soy pasante en la universidad UNIDA en la cual realizo las siguientes tareas:
+                    Formateo, reparación y mantenimiento de computadoras, Instalaciones de Teléfonos IP, Instalación de programas, Cableado de Red, Conocimientos básicos de Kaspersky (reportes), Asignación y configuración de IP.
+                    Soporte a funcionarios en trabajos de Excel, Word, PowerPoint, etc.
+                    Soporte a funcionarios en el Sistema Académico.
+                    Presentación de reportes.
+                    <br>
+                    Tambien tengo conocimientos en:
+                    <ul>
+                        <style>
+                            li{
+                                font-size: 1.3em;
+                            }
+                        </style>
+                        <li class="l mt-n2">HTML, Base de datos(SQL - básico)</li>
+                        <li class="l";">Java(Intermedio)</li>
+                        <li class="l">ASP(básico)</li>
+                        <li class="l">Flutter(Avanzado)</li>
+                        <li class="l">Dart(Basico)</li>
+                        <li class="l">CSS(Intermedio)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="height:2px;border-width:0;color:black;background-color:gray; width: 95%;">
+    <!-- Portfolio Section-->
+    <section class="trabajos" style="display: flex; justify-content: center; flex-wrap: wrap;">
+      <a href="#">
+        <div class="cardd">
+          <img src="/imagenes/flutter.jpg" alt="flutter">
+          <h4>Flutter</h4>
+          <p>Proyectos hechos en Flutter</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="cardd">
+          <img src="/imagenes/spring.png" alt="SPRING">
+          <h4>Spring Framework</h4>
+          <p>Proyectos hechos en Spring</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="cardd">
+          <img src="/imagenes/css.jpg" alt="CSS">
+          <h4>Diseños WEB</h4>
+          <p>Proyectos hechos CON CSS</p>
+        </div>
+      </a>
+    </section>
+    <!-- Contact Section-->
+    <hr style="height:2px;border-width:0;color:black;background-color:gray; width: 95%;">
+    <section class="page-section p-2" id="contact">
+        <div class="dentro-contacto" style="padding: 1em 2em; max-width: 40%; min-width: 30%; margin: 0 auto; background-color: #333; border-radius: 18px;">
+            <form action="prueba.php" method="post" name="form1">
+                <h1 style="text-align: center;">Contacto</h1>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Correo Electronico</label>
+                  <input type="email" required class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Enter email" name="correo">
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Comentario</label>
+                  <textarea class="form-control" required id="comentario" name="comentario" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark" style="display: flex; margin:auto;" >Enviar</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+   
+    <footer class="footer text-center m-5 pt-4 pb-3" style="background-color: #333; border-radius: 18px;display: block;">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-2">Direccion</h4>
+                    <p class="lead mb-0">
+                        AV. Manuel Gondra
+                        <br />
+                        Limpio - Central
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-2">Datos</h4>
+                    <p class="lead">Numero de Telefono: 0981663342</p>
+                    <p class="lead mt-n3">Correo: Daninnunez27@gmail.com</p>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-2">Social</h4>
+                    <a href="http://facebook.com"><p class="lead" style="color: white; text-decoration: none;">Facebook</p></a>
+                </div>
+            </div>
+            <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de Fondo creado por Harryarts - www.freepik.es</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
